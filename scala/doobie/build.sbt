@@ -15,12 +15,15 @@ lazy val catsCore = "org.typelevel" %% "cats-core" % "2.7.0"
 lazy val catsEffect = "org.typelevel" %% "cats-effect" % "3.3.12"
 
 lazy val postrgeSQLDriver = "org.postgresql" % "postgresql" % "42.6.0"
+lazy val mySQLDriver = "com.mysql" % "mysql-connector-j" % "8.0.33"
+
 
 
 libraryDependencies ++= Seq(
   catsCore,
   catsEffect,
   doobieCore,
-  postrgeSQLDriver
+  postrgeSQLDriver,
+  mySQLDriver
 //  doobiePostgres
 )
