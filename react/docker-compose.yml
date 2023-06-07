@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    image: invasi0m/nvm:latest
+    container_name: nvm
+    command: bash
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    ports:
+      - 8080:8080
+      - 3000:3000
+    volumes:
+      - ./app:/app
+    environment:
+      - NODE_ENV=production
