@@ -6,7 +6,7 @@
   import doobie.util.transactor.Transactor
   import doobie.util.transactor.Transactor.Aux
 
-  object Example extends IOApp{
+  object PostgreSQL extends IOApp{
 
 
     /** It works because postgressql is in the classpath right now */

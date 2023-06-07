@@ -2,7 +2,7 @@ version: '3.7'
 services:
   db:
     image: postgres:15.2-alpine
-    container_name: world-postgres
+    container_name: doobie-postgres
     restart: always
     environment:
       - POSTGRES_USER=postgres
@@ -12,5 +12,4 @@ services:
       - '5432:5432'
     volumes:
       - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
-      # - ./data:/var/lib/postgresql/data
       - ./sql:/raw/data
