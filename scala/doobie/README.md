@@ -39,7 +39,7 @@ Para eliminar las instancias
 
 ### Conectate a una base de datos
 
-Lo primero que necesitas para conectarte a una base de datos en scala usando Doobie es tener en tu classpath la dependencia del driver jdbc. La configuración y la conexión mediante Doobie es muy sencilla, puedes revisar la documentación de Doobie en [Connecting to a Database](https://tpolecat.github.io/doobie/docs/15-Extensions-PostgreSQL.html). Sin embargo, se ha preparado una POC para cada instancia en [`scala/doobie/src/main/scala/io/github/invasion/doobie`](scala/doobie/src/main/scala/io/github/invasion/doobie).
+Lo primero que necesitas para conectarte a una base de datos en scala usando Doobie es tener en tu classpath la dependencia del driver jdbc. La configuración y la conexión mediante Doobie es muy sencilla, puedes revisar la documentación de Doobie en [Connecting to a Database](https://tpolecat.github.io/doobie/docs/15-Extensions-PostgreSQL.html). Sin embargo, se ha preparado una POC para cada instancia en [`src/main/scala/io/github/invasion/doobie`](./src/main/scala/io/github/invasion/doobie).
 
 Como se puede observar, la configuración es basica y homogenea para cualquier base de dato:
 
