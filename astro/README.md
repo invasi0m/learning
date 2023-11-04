@@ -1,5 +1,8 @@
 # Learning Astro
-Este proyecto es para tener un learning de **Astro**. Para ello, vamos a disponibilizar un entorno de desarrollo para Astro.
+Este proyecto es para tener un learning de **Astro**. Para ello, vamos a disponibilizar un entorno de desarrollo para Astro con varias opciones:
+
+* Usando [pnpm](./pnpm) (más estable)
+* Usando [bun](./bun) (es nuevo pero más rápido y eficiente)
 
 ## Entorno de desarrollo
 
@@ -9,7 +12,7 @@ El entorno para empezar a programar Astro se conforma de:
 
 * Contenedor Docker con todo lo necesario para empezar con Astro:
   * node
-  * pnpm
+  * pnpm / bun
 
 * Docker-Compose con el puerto `4321` expuesto que es donde se desplegará nuestra aplicación web. Además, apunta a la carpeta `app` dónde se aloja nuestro proyecto Astro.
 * La carpeta `app` que es dónde se encuentra y desde donde desarrollaremos codigo javascript con Astro.
