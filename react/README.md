@@ -3,15 +3,15 @@ Este proyecto es para tener un learning de **React**. Para ello, vamos a disponi
 
 ## Entorno de desarrollo
 
-Se ha preparado un entorno desplegable para que no tengas que instalar nada en tu ordenador y que sea sólo levantar / eliminar contenedor.
+Se ha preparado un entorno desplegable para que no tengas que instalar nada en tu ordenador y que sea solo levantar / eliminar contenedor.
 
 El entorno para empezar a programar React se conforma de:
 
 * Contenedor Docker con todo lo necesario para empezar con React:
-  * nvm
   * node
+  * npm
 
-* Docker-Compose con el puerto 3000 expuesto que es donde se desplegará nuestra aplicación web. Además apunta a la carpeta `app` dónde se aloja nuestro proyecto React.
+* Docker-Compose con el puerto 3000 expuesto que es donde se desplegará nuestra aplicación web. Además, apunta a la carpeta `app` dónde se aloja nuestro proyecto React.
 * La carpeta `app` que es dónde se encuentra y desde donde desarrollaremos codigo javascript con React.
 
 ## Prerrequisitos
@@ -20,7 +20,7 @@ Hace falta tener instalado docker para poder desplegar la imagen.
 
 **Dockerfile**
 
-Puedes generarte en local desde cero tu imagen docker desde el Dockerfile en `./docker/Dockerfile`. Para ello, ejecuta el siguiente comando:
+Puedes generarte en local desde cero tu imagen docker desde el Dockerfile en `./docker/alpine/Dockerfile`. Para ello, ejecuta el siguiente comando:
 
 ```bash
 docker build .
@@ -47,7 +47,7 @@ y una vez dentro, que estaremos directamente en la carpeta `app` dónde se encue
 npm start
 ```
 
-Automáticamente ya tendremos disponible nuestro entorno de desarrollo web en [`http://localhost:3000`](ttp://localhost:3000)
+Automáticamente, ya tendremos disponible nuestro entorno de desarrollo web en [`http://localhost:3000`](ttp://localhost:3000)
 
 ## Referencias
 
