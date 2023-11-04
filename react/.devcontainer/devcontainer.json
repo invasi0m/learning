@@ -22,7 +22,7 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	 "forwardPorts": [3000],
+	"forwardPorts": [3000],
 
 	// Uncomment the next line if you want start specific services in your Docker Compose config.
 	// "runServices": [],
@@ -31,7 +31,21 @@
 	// "shutdownAction": "none",
 
 	// Uncomment the next line to run commands after the container is created.
-	"postCreateCommand": "npm start"
+	"postCreateCommand": "npm install && npm start",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dsznajder.es7-react-js-snippets",
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint",
+				"aaron-bond.better-comments",
+				"Archety.material-icons",
+				"formulahendry.auto-rename-tag",
+				"vincaslt.highlight-matching-tag",
+				"christian-kohler.npm-intellisense"
+			]
+		}
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},

@@ -1,0 +1,15 @@
+#!/bin/bash
+  if [[ $1 = "up" ]] || [[ $1 = "start" ]]; then
+     docker compose -f ${PWD}/docker/postgres/docker-compose.yml up -d
+     docker compose -f ${PWD}/docker/mysql/docker-compose.yml up -d
+     docker compose -f ${PWD}/docker/ignite/docker-compose.yml up -d
+  elif [[ $1 = "down" ]] || [[ $1 = "stop" ]] || [[ $1 = "kill" ]]; then
+     docker rm -f $(docker ps -a | grep doobie | awk '$1 {print $1}')
+  elif [[ $1 = "--help" ]]; then
+    echo "Choose one of the following options:"
+    echo "Start services (instance up | instance start)"
+    echo "Start one particula service (instance postgres | instance mysql | instance ignite)"
+    echo "Stop services (instance down | instance stop | instance kill)"
+  else
+    docker compose -f ${PWD}/docker/$1/docker-compose.yml up -d
+fi

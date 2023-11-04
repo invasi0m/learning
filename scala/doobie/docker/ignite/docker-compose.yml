@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  db:
+    image: apacheignite/ignite
+    container_name: doobie-ignite
+    restart: always
+#    environment:
+#      - MYSQL_ROOT_PASSWORD=mysql # root user = root
+#      - MYSQL_DATABASE=world
+    ports:
+      - '10800:10800'
+    volumes:
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+      - ./sql:/raw/data

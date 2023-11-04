@@ -1,15 +1,19 @@
-version: '3'
+version: '3.7'
 services:
   web:
-    image: invasi0m/nvm:latest
-    container_name: nvm
-    command: bash
+    image: invasi0m/nvm-alpine:latest
+    container_name: react-alpine
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     ports:
       - 8080:8080
       - 3000:3000
-    volumes:
-      - ./app:/app
     environment:
       - NODE_ENV=production
+    volumes:
+      - ./app:/app
+    healthcheck:
+      test: ["CMD-SHELL", "npm -v"]
+      interval: 2s
+      timeout: 5s
+      retries: 5
