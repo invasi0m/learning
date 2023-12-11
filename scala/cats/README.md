@@ -1,16 +1,19 @@
 # Learning Cats in the scratch
 
-Most of the code and comment in this repo probably will be in spanish. The aim of this source is provide enriched resources for spanish speaker who cant deal with all english resources about cats, monads, functors and so on.
+Most of the code and comment in this repo probably will be in spanish. The aim of this source is provide enriched
+resources for spanish speaker who cant deal with all english resources about cats, monads, functors and so on.
 
 After this point, the reading will be switched to spanish.
 
 # Aprendiendo Cats desde 0
 
-Este repositorio estará escrito en su mayor proporción en español. El proposito de este proyecto es aportar a la comunidad hispano hablante recursos para entender conceptos de cats, monadas, functores, etc.
+Este repositorio estará escrito en su mayor proporción en español. El proposito de este proyecto es aportar a la
+comunidad hispanohablante recursos para entender conceptos de cats, monadas, functores, etc.
 
 ### Contenido
 
-El proyecto será evolutivo e irá creciendo en cuanto a contenido y organización. Para moder moverse cómodamente, puede hacerlo a través de la siguiente tabla de contenidos.
+El proyecto será evolutivo e irá creciendo en cuanto a contenido y organización. Para moder moverse cómodamente, puede
+hacerlo a través de la siguiente tabla de contenidos.
 
 Cada lección seguirá un patrón más o menos claro y homogeneo.
 
@@ -21,5 +24,11 @@ Cada lección seguirá un patrón más o menos claro y homogeneo.
 
 ## Tabla de contenidos
 
-* [Semigrupos](./src/main/scala/io/github/invasion/learning/cats/semigroup)
-* [Monoid](./src/main/scala/io/github/invasion/learning/cats/semigroup)
+* [Cats](./src/main/scala/io/github/invasion/learning/cats/)
+    * [Semigrupos](./src/main/scala/io/github/invasion/learning/cats/semigroup)
+    * [Monoid](./src/main/scala/io/github/invasion/learning/cats/semigroup)
+    * [Functor](./src/main/scala/io/github/invasion/learning/cats/functor)
+    * [Applicative](./src/main/scala/io/github/invasion/learning/cats/applicative)
+* [Cats Effect](./src/main/scala/io/github/invasion/learning/effect)
+    * [Essential Effects (Book)](./src/main/scala/io/github/invasion/learning/effect/ee)
+        * [Chapter 1](src/main/scala/io/github/invasion/learning/effect/ee/chapter1)
