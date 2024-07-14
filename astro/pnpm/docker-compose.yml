@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   web:
-    image: invasi0m/pnpm-alpine:latest
+    image: invasi0m/pnpm:alpine
     container_name: pnpm-alpine
     stdin_open: true # docker run -i
     tty: true        # docker run -t
