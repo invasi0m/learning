@@ -8,4 +8,6 @@ fn main() {
     exercises::gigaseconds::test();
     exercises::clock::test();
     exercises::anagram::test();
+    exercises::space_age::test();
+    exercises::space_age_macro::test();
 }
